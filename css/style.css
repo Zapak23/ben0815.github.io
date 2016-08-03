@@ -16,7 +16,7 @@ p {
 }
 
 .button-collapse {
-  color: #26a69a;
+  color: #500000;
 }
 
 .parallax-container {
@@ -54,4 +54,13 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.aggie-maroon {
+  background: #500000;
+}
+
+.navbar {
+  background: linear-gradient(#565252, #332c2c);
+  height: 100px;
 }

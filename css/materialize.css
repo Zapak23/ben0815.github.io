@@ -2951,7 +2951,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #500000;
 }
 
 footer.page-footer .footer-copyright {
@@ -2959,7 +2959,7 @@ footer.page-footer .footer-copyright {
   height: 50px;
   line-height: 50px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.08);
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 table, th, td {
@@ -4236,7 +4236,7 @@ nav .input-field label.active {
 
 .navbar-fixed {
   position: relative;
-  height: 56px;
+  height: 100px;
   z-index: 998;
 }
 
@@ -4246,11 +4246,11 @@ nav .input-field label.active {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
-    line-height: 64px;
+    height: 100px;
+    line-height: 100px;
   }
   .navbar-fixed {
-    height: 64px;
+    height: 100px;
   }
 }
 
