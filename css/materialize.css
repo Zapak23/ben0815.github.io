@@ -4912,9 +4912,9 @@ small {
 [disabled].btn-large,
 .btn-large[disabled],
 .btn-floating[disabled] {
-  background-color: #DFDFDF !important;
+  background-color: #500000 !important;
   box-shadow: none;
-  color: #9F9F9F !important;
+  color: #500000 !important;
   cursor: default;
 }
 
