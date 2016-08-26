@@ -4236,7 +4236,7 @@ nav .input-field label.active {
 
 .navbar-fixed {
   position: relative;
-  height: 100px;
+  height: 80px;
   z-index: 998;
 }
 
@@ -4246,11 +4246,11 @@ nav .input-field label.active {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
+    line-height: 80px;
   }
   .navbar-fixed {
-    height: 100px;
+    height: 80px;
   }
 }
 
