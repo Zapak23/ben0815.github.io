@@ -76,10 +76,3 @@ footer.page-footer {
 .maroon-text{
   color: #500000;
 }
-
-.pic-container {
-  min-height: 450px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
