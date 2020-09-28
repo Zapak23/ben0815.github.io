@@ -1,6 +1,6 @@
 import xlrd
 
-#This is a python script I made because I was bored and sometimes manually rearranging all the code for actives and their headshots can be time consuming. It takes the active member data from HeadshotList.xlsx and prints out the html code in a seperate file for their headshots and names in a txt file. It doesn't generate code for EC at the moment.
+#This is a python script I made because I was bored and sometimes manually rearranging all the code for actives and their headshots can be time consuming. It takes the active member data from HeadshotList.xlsx and prints out the html code in a seperate file for their headshots and names in a html file. 
 
 #Run using 'python3 update.py' on mac/linux, I didnt mess with windows because managing the imports is a pain. Must install xlrd using 'pip install xlrd'
 
