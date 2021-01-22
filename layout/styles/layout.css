@@ -451,23 +451,21 @@ table a, #comments a{background-color:inherit;}
 --------------------------------------------------------------------------------------------------------------- */
 
 .rushmenu{
+	padding-bottom: 1em;
+	padding-bottom: 3em;
+	height: 100%;
 	top: 50px;
 	bottom: 50px; 
 	text-align: center;
-	height: 100%; 
 	background-repeat: no-repeat;
-	padding-bottom: 15em;
 
 }
 
 .navmenu{
 	display: flex;
-
 }
-
 .navmenu > div {
 	flex: 1; 
-
 }
 
 .navbuttons{
@@ -475,9 +473,6 @@ table a, #comments a{background-color:inherit;}
 	list-style: none;
 	position: relative;
 }
-
-
-	
 
 .rushbutton {
 	font-family: 'Press Start 2P', cursive;
@@ -518,7 +513,7 @@ table a, #comments a{background-color:inherit;}
 
 
   .sign {
-	padding-top: 7em;
+	padding-top: 3em;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -539,14 +534,76 @@ table a, #comments a{background-color:inherit;}
 	animation: shine 2s forwards, blink 3s 2s infinite;
   }
 
+  .popover .show{
+	  visibility: visible;
+  }
+
   .popover {
-	display: inline-block;
-	color: blanchedalmond;
-	position: relative;
-	vertical-align: top;
-	padding-right: 50%;
-	background: rgba(0, 0, 0, 0.7);
+	  margin: 3em;
+	font-size: medium;
+	visibility: hidden;
+	font-family: 'Inconsolata', monospace;
+	color: #fffc64;
+	background-color: rgba(0,0,0, 0.99);
+	border: 0 solid;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+	outline: 1px solid;
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 0px;
+	text-shadow: none;
+	outline-color: rgba(255, 255, 255, 0.5);
+	outline-offset: 0px;
  }
+
+.popoverbottom {
+	font: medium;
+	overflow: hidden;
+	margin: 0% auto;
+	max-width: 100%;
+	visibility: hidden;
+	font-family: 'Inconsolata', monospace;
+	color: rgb(206, 98, 98);
+	background-color: rgba(0,0,0, .99);
+	border: 0 solid;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+	outline: 1px solid;
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 0px;
+	text-shadow: none;
+	outline-color: rgba(255, 255, 255, 0.5);
+	outline-offset: 0px;
+	margin-left: 30%;
+	margin-right: 30%;
+	
+ }
+
+.popp {
+	padding: 2em;
+}
+
+.popdates {
+	line-height: 350%;
+	padding-top: 7%;
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	list-style: none;
+}
+
+ .close {
+	color: #aaa;
+	float: right;
+	padding-right: 1%;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
   
   @keyframes shine {

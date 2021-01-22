@@ -3,6 +3,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet"> 
 <!--
 Template Name: Edgpress
 Author: <a href="https://www.os-templates.com/">OS Templates</a>
@@ -73,7 +74,7 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row3" style="background-image:url('../images/demo/backgrounds/test.jpg');background-position-x: center; background-repeat: no-repeat;">
+<div class="wrapper row3" style="background-image:url('../images/demo/backgrounds/test.jpg');background-position-x: center; background-repeat: no-repeat; background-color: black;">
 
     <div class="rushmenu">
      
@@ -82,18 +83,64 @@ Licence URI: https://www.os-templates.com/template-terms
 
       <div class="navmenu"> 
         <br>
-        <div class="rushpop"> Hello </div>
+        <div class="popover" id="rushpop">  
+          <span class="close" onclick="closingpopup('rushpop')")>x</span> 
+          <p class="popp"> Theta Tau has two rounds of rush, one at the beginning of each semester. For prospective members
+            we run booths at both the MSC open house and at E-week by the Zachary Engineering building. We also 
+            host tailgates before home football games and will have groups set up around campus to help students find 
+            out more about the organization. During the rush process we host social events to help rushees meet active members
+            and get a feel for the organization. Students are encouraged to attend as many events as possible during rush.
+            At the end of the process, active members will choose who will receive invitations to continue on as pledges.</p>
+            <p class = "center">There is NO obligation to pledge just because you attend rush events. Come by and say Hi!</p></p>
+        </div>
         <ul class="navbuttons">
-          <li> <a class = "rushbutton" href="#rushinfo">Rush Information</a></li>
-          <li> <a class = "rushbutton" href="#covid">COVID-19 Update</a></li>
-          <li> <a class = "rushbutton" href="#dates">Important Dates</a></li>
+          <li> <a class = "rushbutton" onclick="popupshow('rushpop')">Rush Information</a></li>
+          <li> <a class = "rushbutton" onclick="popupshow('datespop')">Important Dates</a></li>
+          <li> <a class = "rushbutton" onclick="popupshow('covidpop')">COVID-19 Update</a></li>
+          <li> <a class = "rushbutton">Application</a></li>
         </ul>
-        <div class="datespop"> Hello </div>
+        <div class="popover" id="datespop">
+          <span class="close" onclick="closingpopup('datespop')")>x</span> 
+          <ul class="popdates">
+            <li> 1st Information  - Jan. 28th  | 8pm</li>
+            <li> 2nd Information  - Feb. 1st   | 8pm</li>
+            <li> 3rd Information  - Feb. 2nd   | 7pm</li>
+            <li> Speed Dating     - Feb. 3rd   | 8pm</li>
+            <li> Game Night       - Feb. 4th   | 8pm</li>
+            <li> Scavenger Hunt   - Feb. 6th   | 12pm</li>
+            <li> Meet The Actives - Feb. 8th   | 7pm</li>
+            <li> Skyfall Night    - Feb. 9th   | 8pm</li>
+            <li> Trivia           - Feb. 13th  | 2pm</li>
+            <li> Applications Due  - Feb. 14th</li>
+            
+          </ul>
+        </div>
       </div>
 
-      <div class="covidpop"> Hello </div>
+      <div class="popoverbottom" id="covidpop"> 
+        <span class="close" onclick="closingpopup('covidpop')")>x</span> 
+        <p class="popp"> Due to the COVID pandemic many of our events will virtual and we ask that any in person event attendees take measures to keep themselves and others safe.
+          In addition to taking safety measures, we will have online events such as game nights, virtual meet-the-actives events and more. Theta Tau is committed 
+          to keeping our rushees, pledges and active members safe and healthy. We're looking forward to meeting you and hope you're staying safe!
+          If you are showing symptoms or have been exposed to the virus we do ask that you stick with online events. 
+          This will not affect your chances of being accepted.</p>
+      
+      </div>
   </div>
-    <br><br>
+  
+    <script>
+      function popupshow(popid) {
+        var popup = document.getElementById(popid);
+        popup.style.visibility = "visible";
+      }
+
+      function closingpopup(popid)
+      {
+        var popup = document.getElementById(popid);
+        popup.style.visibility = "hidden";
+      }
+    </script>
+</div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
