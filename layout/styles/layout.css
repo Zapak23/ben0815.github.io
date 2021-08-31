@@ -447,10 +447,10 @@ table a, #comments a{background-color:inherit;}
 	.split section{float:none; width:100%; padding:10% 5%;}
 }
 
-.backgroundfall2021 {
-	background-image: url("../../images/Fall2021/THETATAUFLYER1.pdf");
-	background-size: cover;
-	
+.image2021 {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 }
   
 
