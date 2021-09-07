@@ -452,5 +452,9 @@ table a, #comments a{background-color:inherit;}
   	margin-left: auto;
   	margin-right: auto;
 }
+
+a:hover{
+	background-color:maroon;
+}
   
 
