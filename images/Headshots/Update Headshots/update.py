@@ -1,8 +1,12 @@
 import xlrd
 
-#This is a python script I made because I was bored and sometimes manually rearranging all the code for actives and their headshots can be time consuming. It takes the active member data from HeadshotList.xlsx and prints out the html code in a seperate file for their headshots and names in a html file. 
+#This is a python script I made because I was bored and sometimes manually rearranging all the code for actives and their headshots
+#  can be time consuming. It takes the active member data from HeadshotList.xlsx and prints out the html code in a seperate file 
+# for their headshots and names in a html file. 
 
-#Run using 'python3 update.py' on mac/linux, I didnt mess with windows because managing the imports is a pain. Must install xlrd using 'pip install xlrd'
+#Run using 'python3 update.py' on mac/linux, I didnt mess with windows because managing the imports is a pain. 
+# !!Must install xlrd using 'pip install xlrd' in unix terminal!! If it throws a NOT SUPPORTED kind of error than
+#make sure that you have the right version with 'pip install xlrd==1.2.0' and try again
 
 wb = xlrd.open_workbook('HeadshotList.xlsx')
 sheet= wb.sheet_by_index(0)
@@ -76,7 +80,7 @@ name_count = 1
 while img_index < sheet.nrows:
     while img_count<=4:
         if img_index == sheet.nrows:
-            break;
+            break
         if (sheet.cell_value(img_index,2) == False) | (sheet.cell_value(img_index,2) == 0):
             section = "one_quarter"
             if img_count == 1:
