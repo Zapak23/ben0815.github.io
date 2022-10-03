@@ -17,7 +17,7 @@ def populateEC(sheet, EC):
             EC[sheet.cell_value(active,2)] = active
 
 
-file = open("activehtmlcode.html", "w+")
+file = open("activehtmlcode_new.html", "w+")
 
 file.write("<div id=\"gallery\">\n  <figure>\n\n    <h5 class=\"center\" style=\"font-size:200%;\">Executive Committee</h5>\n    <hr><br>\n    <ul class=\"nospace clear\">\n\n") #write EC header
 
