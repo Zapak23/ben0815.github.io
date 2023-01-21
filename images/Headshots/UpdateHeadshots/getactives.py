@@ -4,14 +4,14 @@ import xlwt
 def create_actives_xl_file(actives_file):     
     all_members = xlrd.open_workbook(actives_file)
     headshots_wb = xlwt.Workbook()
-    headshots_wb_file = "updateActives.xlsx"
-    headshots_ws = headshots_wb.add_sheet("Headshots_test")
+    headshots_wb_file = "spring2023dummy.xlsx"
+    headshots_ws = headshots_wb.add_sheet("spring2023dummy.xlsx")
 
     # Go throught the current memebers and if they are active, add them to a data structure to sort and write to a new excel
 
     active_members_by_rows = []
 
-    actives_sheet = all_members.sheet_by_name("actives") # grabs the current actives sheet
+    actives_sheet = all_members.sheet_by_name("Actives") # grabs the current actives sheet
     for member in reversed(range(0, actives_sheet.nrows)):
         #print(actives_sheet.cell_value(member, 1)) # Prints out the active members in the actives sheet
         active_members_by_rows.append(actives_sheet.row_values(member))
