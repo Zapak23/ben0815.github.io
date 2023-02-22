@@ -22,14 +22,14 @@ import xlwt
 # Make sure the image .JPGs are FirstnameLastname
 
 
-file_of_active_memebers = "spring2023actives.xlsx"
+file_of_active_memebers = "Members (Alumni & Current).xlsx"
 
 imagepath = "../images/Headshots/oldHeadshots/" # Change this variable to change the path where the images are located
 # ^ with respect to where the 'active.html' file is. 
 
 headshots_file = create_actives_xl_file(file_of_active_memebers)
 
-print(headshots_file)
+print(f'{headshots_file}: created to run through \'update.py\'\n')
 
 wb = xlrd.open_workbook(headshots_file)
 sheet = wb.sheet_by_index(0)
