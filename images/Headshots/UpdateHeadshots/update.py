@@ -9,27 +9,27 @@ import xlwt
 # !!Must install xlrd using 'pip install xlrd' in unix terminal!! If it throws a NOT SUPPORTED kind of error than
 #make sure that you have the right version with 'pip install xlrd==1.2.0' and try again
 
-# ADAM'S EDITS: So hopfully ie made a script that will make the html easier. Since it takes time to edit the excel sheet with the 
-# actives and the all the photos, I figured it would be easiest to make a script to make the excel. The scribe has a sheet that has a 
+# ADAM'S EDITS: So hopfully ive made a script that will make the html easier. Since it takes time to edit the excel sheet with the 
+# actives and the all the photos, I figured it would be easiest to make a script to make the excel. The OT-Scribe has a sheet that has a 
 # list of all the actives. Just download the list and run the 'update.py' file. Below are some variables to help with the updates process. 
 # Just update the variable to update the entire the list. The following should include:
 #
 # imagepath: the path to all the images your looking to update
-# headshot_file: a string avriabel that holds the file name from the 'create_actives_xl_file'. 
-# file_of_active_members: just to make the process a little mor intuitive, there is an input variable to type the filename for actrive members.
+# headshot_file: a string variable that holds the file name from the 'create_actives_xl_file'. 
+# file_of_active_members: just to make the process a little more intuitive, there is an input variable to type the filename for active members.
 # 
 # No one ever said I was creative with variable/function names, but hopefully this makes it easier.
 # Make sure the image .JPGs are FirstnameLastname
 
 
-file_of_active_memebers = "spring2023actives.xlsx"
+file_of_active_memebers = "Members (Alumni & Current).xlsx"
 
 imagepath = "../images/Headshots/oldHeadshots/" # Change this variable to change the path where the images are located
 # ^ with respect to where the 'active.html' file is. 
 
 headshots_file = create_actives_xl_file(file_of_active_memebers)
 
-print(headshots_file)
+print(f'{headshots_file}: created to run through \'update.py\'\n')
 
 wb = xlrd.open_workbook(headshots_file)
 sheet = wb.sheet_by_index(0)

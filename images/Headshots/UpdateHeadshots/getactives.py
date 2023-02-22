@@ -4,7 +4,7 @@ import xlwt
 def create_actives_xl_file(actives_file):     
     all_members = xlrd.open_workbook(actives_file)
     headshots_wb = xlwt.Workbook()
-    headshots_wb_file = "spring2023dummy.xlsx"
+    headshots_wb_file = "spring2023dummy.xlsx" # This is the file for Austins code.
     headshots_ws = headshots_wb.add_sheet("spring2023dummy.xlsx")
 
     # Go throught the current memebers and if they are active, add them to a data structure to sort and write to a new excel
